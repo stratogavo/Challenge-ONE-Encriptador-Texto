@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Alura</title>
+        <link rel="shortcut icon" href="images/logo-alura.svg">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/logo-alura.svg" alt="Logotipo de Alura">
+            </nav>
+        </header>     
+        <main>
+            <section class="input-section">
+                <div class="input-area">
+                    <textarea name="input" id="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="fill-instructions">
+                    <img src="images/exclamation-circle.png" alt="Signo de exclamación">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="input-btn-area">
+                    <button class="alura-btn dark-blue-btn" id="encrypt-button">Encriptar</button>
+                    <button class="alura-btn light-blue-btn" id="decrypt-button">Desencriptar</button>
+                </div>
+            </section>
+            <section class="output-section">
+                <div class="no-output" id="no-output">
+                    <img src="images/boy-img-encrypter.svg" alt="Imagen de chico investigando">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>          
+                <div class="output-area hidden-block" id="output-area">
+                    <div class="output-text">
+                        <textarea name="output" id="output-text" readonly></textarea>
+                    </div>
+                    <div class="copy-btn-container">
+                        <button class="alura-btn alura-btn-enabled" id="copy-button">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>        
+        <footer>
+            <p>&copy; <span id="current-year"></span> - Desarrollado por Gerardo Velasco</p>
+        </footer>
+        <div class="modal-container">
+            <input type="checkbox" id="open-modal" class="modal-toggler"/>
+            <label class="modal-mask" for="open-modal"></label>
+            <div class="modal">
+                <label class="modal-close" for="open-modal"></label>
+                <div class="modal-content">
+                    <h1 id="modal-title" class="modal-title"></h1>
+                    <p id="modal-content"></p>
+                    <label class="modal-btn alura-btn alura-btn-enabled dark-blue-btn" for="open-modal">Aceptar</label>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/encrypter-script.js"></script>
+    </body>
+</html>
