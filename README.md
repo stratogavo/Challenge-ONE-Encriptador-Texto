@@ -43,5 +43,5 @@
 </div>
 <br/>
 <div align="center">
-<img src="images/cms_files_10224_1671210503Prancheta_3" align="center" style="width: 75%; height: auto" />
+<img src="images/cms_files_10224_1671210503Prancheta_3.png" align="center" style="width: 75%; height: auto" />
 </div>
